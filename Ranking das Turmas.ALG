@@ -1,7 +1,7 @@
-//Função: Aplicação para efetuar o cadastro das notas
-//Cada turma terá a sua média, a partir das notas dos alunos
-//No final, será efetuado um ranking das turmas de maior média
-algoritmo "Olimpíadas Conhecimentos Gerais"
+//FunÃ§Ã£o: AplicaÃ§Ã£o para efetuar o cadastro das notas
+//Cada turma terÃ¡ a sua mÃ©dia, a partir das notas dos alunos
+//No final, serÃ¡ efetuado um ranking das turmas de maior mÃ©dia
+algoritmo "OlimpÃ­adas Conhecimentos Gerais"
 var
    opcao: inteiro
    nome_turma: vetor[1..100] de caractere
@@ -17,13 +17,13 @@ inicio
 
    enquanto opcao <> 3 faca
       escreval("==================================")
-      escreval("Olimpíadas de Conhecimentos Gerais")
+      escreval("OlimpÃ­adas de Conhecimentos Gerais")
       escreval("==================================")
       escreval("1 - Cadastrar notas da Turma")
       escreval("2 - Visualizar ranking das turmas")
       escreval("3 - Sair")
       escreval("==================================")
-      escreva("Digite a opção desejada: ")
+      escreva("Digite a opÃ§Ã£o desejada: ")
       leia(opcao)
 
       escolha opcao
@@ -42,7 +42,7 @@ inicio
             soma_notas <- soma_notas + nota
          fimpara
 
-         // Média
+         // MÃ©dia
          media[total_turmas] <- soma_notas / num_alunos[total_turmas]
 
          escreval("Cadastro da turma realizado com sucesso!")
@@ -68,9 +68,9 @@ inicio
 
          escreval("=========== RANKING DAS TURMAS ===========")
          para i de 1 ate total_turmas faca
-            escreval("Classificação: ", i, "º Colocado")
+            escreval("ClassificaÃ§Ã£o: ", i, "Âº Colocado")
             escreval("Nome da turma: ", nome_turma[i])
-            escreval("Média total: ", media[i])
+            escreval("MÃ©dia total: ", media[i])
             escreval("=========================================")
          fimpara
 
@@ -80,7 +80,7 @@ inicio
       caso 3
          escreval("Programa Encerrado")
       outrocaso
-         escreval("Opção inválida! Tente novamente.")
+         escreval("OpÃ§Ã£o invÃ¡lida! Tente novamente.")
       fimescolha
    fimenquanto
 fimalgoritmo
